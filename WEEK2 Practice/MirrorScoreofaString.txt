@@ -1,0 +1,30 @@
+3412 : Mirror Score of a String
+
+link : https://leetcode.com/problems/find-mirror-score-of-a-string/
+
+code -> 
+
+class Solution {
+    public long calculateScore(String s) {
+        Deque<Integer>[] map = new ArrayDeque[26];
+        
+        for (int i = 0; i < 26; i++) {
+            map[i] = new ArrayDeque<>();
+        }
+        
+        long score = 0;
+        
+        for (int i = 0; i < s.length(); i++) {
+            int currChar = s.charAt(i) - 'a';
+            int mirrorChar = 25 - currChar; 
+            if (!map[mirrorChar].isEmpty()) {
+                int j = map[mirrorChar].pop();
+                score += (i - j);
+            } else {
+                map[currChar].push(i);
+            }
+        }
+        
+        return score;
+    }
+}
