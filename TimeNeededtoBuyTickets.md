@@ -1,7 +1,9 @@
-Leetcode 2073 : Time Needed to Buy Tickets
+# Leetcode 2073 : Time Needed to Buy Tickets
 
-Code -> 
-Approach 1) -> 
+## Code
+
+### Approach 1)
+```java
 class Solution {
     public int timeRequiredToBuy(int[] tickets, int k) {
         int c=0, t = tickets[k];
@@ -11,7 +13,7 @@ class Solution {
             dq.addLast(tickets[i]);
         }
 
-         while(true){
+        while(true){
             if(!dq.isEmpty() && dq.peekFirst()==101){
                 if(t==1){
                     c++;
@@ -36,9 +38,10 @@ class Solution {
         return c;
     }
 }
-
-
-Approach 2) -> class Solution {
+```
+### Approach 2)
+```java
+class Solution {
     public int timeRequiredToBuy(int[] tickets, int k) {
         int n = tickets.length, time=0;
         for(int i=0; i<n; i++){
@@ -52,3 +55,4 @@ Approach 2) -> class Solution {
         return time;
     }
 }
+```
