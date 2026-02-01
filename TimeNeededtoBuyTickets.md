@@ -1,5 +1,7 @@
 # Leetcode 2073 : Time Needed to Buy Tickets
 
+[link] (https://leetcode.com/problems/time-needed-to-buy-tickets/submissions/1899420615/)
+
 ## Code
 
 ### Approach 1)
