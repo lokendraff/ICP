@@ -1,5 +1,7 @@
 # Leetcode 1823 : Find the Winner of the Circular Game
 
+[Link] (https://leetcode.com/problems/find-the-winner-of-the-circular-game/submissions/1899460405/)
+
 ## Code
 
 ### Approach 1)
